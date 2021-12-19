@@ -1,8 +1,7 @@
 # FLASH
-#### Video Demo: https://youtu.be/2wrWAk9c3qQ
-#### Description:
+## Video Demo: https://youtu.be/2wrWAk9c3qQ
 
-##### Introducing my project
+## Introducing my project
 
 My Final Project is an online flashcard web application made using Flask.
 This was made with active recall in mind, allowing the user to test themselves using virtual 'flashcards'.
@@ -18,11 +17,11 @@ What I really gained from this project was:
 - a deeper understanding of javascript
 - a greater appreciation for web design and aesthetics
 
-##### helpers.py
+### helpers.py
 
 Referencing CS50's pset9 Finance, I used the same login function and adapted the apology function to suit my app.
 
-##### app.py
+### app.py
 
 Similarly, referencing CS50's pset9 Finance, I used similar code for the sessions and login functions.
 
@@ -78,11 +77,11 @@ I tried deleting the deck before the cards, but found out that I had to do the o
 
 For the Delete Card page, the obstacle for me was how to renumber the cards after the user deleted a card.
 
-##### schema.sql
+### schema.sql
 
 This is what I used to keep track of my database structure and to type my code so I could easily drop and recreate tables.
 
-##### Website Design
+### Website Design
 
 For the website design, I originally used a grey-yellow color scheme and I got CSS for staircase-like h1 tags.
 However, it just did not fit with the overall design, and I had to seriously rethink my design choices.
