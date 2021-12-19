@@ -1,0 +1,114 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	background-color: #0b3954;
+	margin-bottom: 20px;
+}
+
+main .form-control {
+    margin-bottom: 30px;
+}
+
+main {
+	padding-bottom: 30px;
+}
+
+.navbar {
+	justify-content: flex-start;
+}
+
+.nav_pages {
+	padding: 20px;
+	color: white;
+}
+
+.welcome-button {
+	padding: 20px;
+}
+
+footer {
+	background-color: #1e2328;
+	color: white;
+}
+
+img {
+	/* Make the image fit in the container*/
+	max-width: 100%;
+}
+
+.welcome-text {
+	position: absolute;
+   	bottom: 50px;
+}
+
+.flash {
+	font-size: 90px;
+}
+
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	color: white;
+}
+
+.plus-sign {
+	margin-left: 20px;
+}
+
+.website-title {
+	padding-left: 30px;
+}
+
+.form-title {
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+.nav_right {
+	float: right;
+}
+
+table
+{
+    width: 100%;
+    margin: auto;
+    color: #0b3954;
+    border-bottom: 1px solid #0b3954;
+}
+
+th, td
+{
+    text-align: left;
+    border-bottom: 1px solid #0b3954;
+}
+
+.table-light {
+	background-color: #bfd7ea;
+}
+
+.deck_href {
+	color: #0b3954;
+}
+
+.card {
+	border-radius: 25px;
+	background-color: #bfd7ea;
+	color: #0b3954;
+	margin: auto;
+	padding: 50px;
+	margin-bottom: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+}

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	View
+{% endblock %}
+
+{% block content %}
+  	<div class="container">
+  		<h1 id='deck_name' class='form-title'>{{ deck_name }}</h1>
+  		<h6 id='card_id'>{{ card_id }}</h6>
+  		<div class="row">
+  			<div class="col">
+  				<label>Title</label>
+				<p class="card">{{ card[0]['title'] }}</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<label hidden id='hidden_label'>Content</label>
+				<p class="card" hidden id='hidden_content'>{{ card[0]['content'] }}</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<form action="/view/{{ deck_name }}/{{ card_id }}" method="post">
+					<div hidden class="form-group" id="status_form">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" name="status" type="checkbox" value="Green">
+							<label class="form-check-label">Green</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" name="status" type="checkbox" value="Yellow">
+							<label class="form-check-label">Yellow</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" name="status" type="checkbox" value="Red">
+							<label class="form-check-label">Red</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-outline-light" id="show_content" type="button">Show Content</button>
+						<button class="btn btn-outline-light" id="next_card" type="submit">Next Card</button>
+						<p hidden id="last_card">{{ deck_size }}</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}

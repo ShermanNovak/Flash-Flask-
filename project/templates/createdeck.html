@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Create Deck
+{% endblock %}
+
+{% block html_head %}
+	<style type="text/css">
+		body {
+			background-image: url('./static/7.jfif');
+			background-position: left top;
+			background-repeat: no-repeat;
+			background-size: 40% 100%;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col-5"></div>
+			<div class="col-6">
+				<h1 class="form-title">Create A Deck</h1>
+			    <form action="/createdeck" method="post">
+			    	<div class="form-group">
+			    		<label>Deck Name</label>
+			    		<input name="deck_name" class="form-control" type="text" autofocus></input>
+				    </div>
+			        <button class="btn btn-outline-light" type="submit">Create</button>
+			    </form>
+		    </div>
+		</div>
+	</div>
+{% endblock %}

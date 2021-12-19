@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Sign Up
+{% endblock %}
+
+{% block html_head %}
+	<style type="text/css">
+		body {
+			background-image: url('./static/1.jpg');
+			background-position: left top;
+			background-repeat: no-repeat;
+			background-size: 40% 100%;
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col-5"></div>
+			<div class="col-6">
+				<h1 class="form-title">Create Account</h1>
+				<form action="/signup" method="post">
+					<div class="form-group">
+						<label>Username</label>
+						<input autocomplete="off" autofocus class="form-control" name="username" type="text" required>
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input class="form-control" name="password" type="text" required>
+					</div>
+					<div class="form-group">
+						<label>Confirm Password</label>
+						<input class="form-control" name="confirmation" type="text" required>
+					</div>
+					<button class="btn btn-outline-light" type="submit">Sign Up</button>
+				</form>
+				<div class="nav_right">
+					<p>Already have an account?<a class="nav_pages" href="/login">Login</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

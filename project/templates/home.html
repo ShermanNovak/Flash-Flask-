@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block content %}
+  	<div class="container">
+  		<div class="row">
+  			<h1 class="form-title">{{ username[0]['username'] }}</h1>
+			<table class="table table-striped table-light table-hover">
+			    <thead>
+			      <th>Decks<a href="/createdeck" class="btn btn-outline-dark plus-sign">+</a></th>
+			      <th>Number of Cards<a href="/create" class="btn btn-outline-dark plus-sign">+</a></th>
+			      <th>Created On</th>
+			      <th></th>
+			    </thead>
+			    <tbody>
+			    	{% for deck in decks %}
+			    		<tr>
+			    			<td><a class='deck_href'>{{ deck['deck_name'] }}</a></td>
+			    			<td>{{ deck['deck_size'] }}</td>
+			    			<td>{{ deck['timing'] }}</td>
+			    			<td>
+			    				<a href='/editdeck/{{ deck['deck_name'] }}' class='btn btn-outline-dark edit-button'>Edit</a>
+			    				<form action='/delete/{{ deck['deck_name'] }}' method='post'>
+			    					<button class="btn btn-outline-dark delete-button" type="submit">
+			    						<img src="./static/rubbish-bin-delete-button.svg" width="20" height="20" alt="Delete">
+			    					</button>
+			    				</form>
+			    			</td>
+			    		</tr>
+			    	{% endfor %}
+			    </tbody>
+			</table>
+		</div>
+	</div>
+{% endblock %}

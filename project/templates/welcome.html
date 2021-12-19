@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Welcome
+{% endblock %}
+
+{% block html_head %}
+	<style type="text/css">
+		body {
+			background: linear-gradient(90deg, #0b3954 67%, #bfd7ea 0%);
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+	<div class="container welcome-text">
+		<div class="col">
+			<h1 class="flash">Flash</h1>
+			<div class="nav_account">
+				<a class="btn btn-outline-light welcome-button" href="{{ url_for('signup') }}">Sign Up</a>
+				<a class="btn btn-outline-light welcome-button" href="{{ url_for('login') }}">Log In</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}
